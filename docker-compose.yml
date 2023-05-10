@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  simple-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: simple-app
+    ports:
+      - 3000:3000
+    entrypoint: ['npm', 'start']
